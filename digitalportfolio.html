@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Digital Portfolio</title>
+<meta charset="utf-8">
+<link rel="stylesheet" type="text/css" href="header.css">
+<link rel="stylesheet" type="text/css" href="digitalportfolio.css">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Caprasimo&family=Fraunces:ital,opsz,wght@0,9..144,100..900;1,9..144,100..900&family=Sigmar&display=swap" rel="stylesheet">
+</head>
+
+<header>
+
+<div id="logodiv"><!--start of logodiv-->
+<a href="index.html"><img src="images/caticon.png" alt="cat icon" width="400"></a>  
+</div><!--end of logodiv-->
+
+<div id="navdiv">
+<a href="about.html"><img src="images/abouticon.png" alt="about icon" width="80" height="80"></a>  
+<a href="portfolio.html"><img src="images/portfolioicon.png" alt="portfolio icon" width="130" height="80"></a> 
+<a href="resume.html"><img src="images/resumeicon.png" alt="resume icon" width="95" height="80"></a>  
+<a href="awardsnav.html"><img src="images/awardsicon.png" alt="awards icon" width="100" height="85"></a>  
+<a href="contact.html"><img src="images/contacticon.png" alt="contact icon" width="100" height="75"></a>  
+</div><!--end of navdiv-->
+</header>
+
+
+
+
+<div id="backbutton" onclick="history.back()"><p class="p2">&#8617;</p></div><!--end of backbutton-->
+
+
+<div id="portgallery">
+<img class="myImages" id="img0" src="portfolio-images/portfolio1.jpeg" alt="Underneath These Stars Book Cover: <br><br> A book cover for a short story co-written by myself and a friend.">
+
+<img class="myImages" id="img1" src="portfolio-images/portfolio2.jpeg" alt="Delano Character Sheet: <br><br> An illustration of an original character.">
+
+<img class="myImages" id="img2" src="portfolio-images/portfolio3.jpg" alt="Truffle: <br><br> An illustration of an original character.">
+
+<img class="myImages" id="img3" src="portfolio-images/portfolio4.jpeg" alt="Goob: <br><br> An illustration of a character from the game Dandy's World.">
+
+<img class="myImages" id="img4" src="portfolio-images/portfolio5.jpeg" alt="Leofwine: <br><br> An illustration of an original character.">
+
+<img class="myImages" id="img5" src="portfolio-images/portfolio7.jpeg" alt="Cowboy: <br><br> An illustration of another person's original character.">
+
+<img class="myImages" id="img6" src="portfolio-images/portfolio8.jpeg" alt="Musket Wielder: <br><br> An illustration of an original character.">
+
+<img class="myImages" id="img7" src="portfolio-images/portfolio9.jpeg" alt="Ames: <br><br> An illustration of an original character.">
+
+<img class="myImages" id="img8" src="portfolio-images/portfolio10.jpeg" alt="Telephone: <br><br> A SCARY (eek) illustration of an original character.">
+<br>
+
+<div id="myModal" class="modal">
+  <span class="close">&times;</span>
+  <img src="none" class="modal-content" id="img01" alt="modal">
+  <div id="caption"></div>
+</div>
+
+<div id="footer"><!--start of footerdiv-->
+<p id="footertext">Copyright 2024 &#169; All Rights Reserved. Mckenna Bell</p>
+</div>
+
+<script>
+// create references to the modal...
+var modal = document.getElementById('myModal');
+// to all images -- note I'm using a class!
+var images = document.getElementsByClassName('myImages');
+// the image in the modal
+var modalImg = document.getElementById("img01");
+// and the caption in the modal
+var captionText = document.getElementById("caption");
+
+// Go through all of the images with our custom class
+for (var i = 0; i < images.length; i++) {
+  var img = images[i];
+  // and attach our click listener for this image.
+  img.onclick = function(evt) {
+    modal.style.display = "block";
+    modalImg.src = this.src;
+    captionText.innerHTML = this.alt;
+  }
+}
+
+var span = document.getElementsByClassName("close")[0];
+
+span.onclick = function() {
+  modal.style.display = "none";
+}
+</script>
+</div>
+</html>

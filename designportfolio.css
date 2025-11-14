@@ -1,0 +1,142 @@
+.p1 {
+font-family: 'Caprasimo', regular;
+}
+
+.p2 {
+font-family: 'Microsoft Sans Serif', regular;
+}
+
+#backbutton {
+position: fixed;
+top: 100px;
+left: 20px;
+z-index: 1000;
+display: flex;
+color: #083060;
+font-size: 45px;
+cursor: pointer;
+}
+
+#portgallery {
+width: 80%;
+display: flex;
+align-items: center;
+justify-content: center;
+flex-direction: row;
+flex-wrap: wrap;
+margin-left: auto;
+margin-right: auto;
+margin-top: 150px;
+font-size: 23px;
+}
+
+.myImages {
+margin: 30px;
+height: 400px;
+background-image: contain;
+border-radius: 25px;
+
+filter: drop-shadow(0px 10px 6px black);
+
+ cursor: pointer;
+  transition: 0.3s;
+}
+
+.myImages:hover {
+  opacity: 0.7;
+}
+
+.modal {
+  display: none;
+  /* Hidden by default */
+  position: fixed;
+  /* Stay in place */
+  z-index: 1;
+  /* Sit on top */
+  padding-top: 100px;
+  /* Location of the box */
+  left: 0;
+  top: 75px;
+  width: 100%;
+  /* Full width */
+  height: 100%;
+  /* Full height */
+  overflow: auto;
+  /* Enable scroll if needed */
+  background-color: rgb(0, 0, 0);
+  /* Fallback color */
+  background-color: rgba(0, 0, 0, 0.9);
+  /* Black w/ opacity */
+}
+
+.modal-content {
+  margin: 50px auto;
+  display: block;
+  max-height: 650px;
+}
+
+#caption {
+  margin: auto;
+  display: block;
+  width: 80%;
+  max-width: 700px;
+  text-align: center;
+  color: #ccc;
+  padding: 10px 0;
+  height: 350px;
+  font-family: 'Microsoft Sans Serif', regular;
+}
+
+.modal-content,
+#caption {
+  animation-name: zoom;
+  animation-duration: 0.6s;
+}
+
+@keyframes zoom {
+  from {
+    transform: scale(0)
+  }
+  to {
+    transform: scale(1)
+  }
+}
+
+.close {
+  position: absolute;
+  top: 120px;
+  right: 35px;
+  color: #f1f1f1;
+  font-size: 40px;
+  font-weight: bold;
+  transition: 0.3s;
+}
+
+.close:hover,
+.close:focus {
+  color: #bbb;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+@media only screen and (max-width: 700px) {
+  .modal-content {
+    width: 100%;
+  }
+}
+
+#footer {
+height: 250px;
+width: 100%;
+background-color: #083060;
+margin-top: 100px;
+border-top-left-radius: 30px;
+border-top-right-radius: 30px;
+}
+
+#footertext {
+font-size: 25px;
+color: #d8e7ed;
+text-align: center;
+padding-top: 125px;
+}

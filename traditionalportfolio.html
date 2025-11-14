@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Traditional Portfolio</title>
+<meta charset="utf-8">
+<link rel="stylesheet" type="text/css" href="header.css">
+<link rel="stylesheet" type="text/css" href="traditionalportfolio.css">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Caprasimo&family=Fraunces:ital,opsz,wght@0,9..144,100..900;1,9..144,100..900&family=Sigmar&display=swap" rel="stylesheet">
+</head>
+
+<header>
+
+<div id="logodiv"><!--start of logodiv-->
+<a href="index.html"><img src="images/caticon.png" alt="cat icon" width="400"></a>  
+</div><!--end of logodiv-->
+
+<div id="navdiv">
+<a href="about.html"><img src="images/abouticon.png" alt="about icon" width="80" height="80"></a>  
+<a href="portfolio.html"><img src="images/portfolioicon.png" alt="portfolio icon" width="130" height="80"></a> 
+<a href="resume.html"><img src="images/resumeicon.png" alt="resume icon" width="95" height="80"></a>  
+<a href="awardsnav.html"><img src="images/awardsicon.png" alt="awards icon" width="100" height="85"></a>  
+<a href="contact.html"><img src="images/contacticon.png" alt="contact icon" width="100" height="75"></a>  
+</div><!--end of navdiv-->
+</header>
+
+
+
+<div id="backbutton" onclick="history.back()"><p class="p2">&#8617;</p></div><!--end of backbutton-->
+
+<div id="portgallery">
+<img class="myImages" id="img0" src="portfolio-images/trad1.jpeg" alt="Hidden Pattern: <br><br> An ink illustration of a black and white pattern of overlapping butterflies.">
+
+<img class="myImages" id="img1" src="portfolio-images/trad2.jpeg" alt="Red Flowers: <br><br> A color pencil illustration of a bundle of red flowers on a black subtrate and mounted.">
+
+<img class="myImages" id="img2" src="portfolio-images/trad3.jpeg" alt="Orange and Red Ribbon: <br><br> A color pencil illustration of an orange with a red ribbon on a white subtrate and mounted.">
+
+<img class="myImages" id="img3" src="portfolio-images/trad4.png" alt="Vertical and Horizontal: <br><br> An ink illustration of a cup of lemons. One is done with only vertical lines while the other is only horizontal.">
+
+<img class="myImages" id="img4" src="portfolio-images/trad5.jpeg" alt="Skeletal Foot: <br><br> An ink stippling illustration of a foot in two different views.">
+
+<img class="myImages" id="img5" src="portfolio-images/trad6.jpeg" alt="SkillsUSA No Limits Promotional Bulletin Board: <br><br> A promotional bulletin board for SkillsUSA 2024. It was made with foam core and laminated images and features aspects that are interchangable.">
+
+<img class="myImages" id="img6" src="portfolio-images/trad7.png" alt="SkillsUSA Ignite Your Potential Promotional Bulletin Board: <br><br> A promotional bulletin board for SkillsUSA 2025. It was made with foam core and laminated images and features aspects that are interchangable.">
+
+<br>
+
+<div id="myModal" class="modal">
+  <span class="close">&times;</span>
+  <img src="none" class="modal-content" id="img01" alt="modal">
+  <div id="caption"></div>
+</div>
+
+<div id="footer"><!--start of footerdiv-->
+<p id="footertext">Copyright 2024 &#169; All Rights Reserved. Mckenna Bell</p>
+</div>
+
+<script>
+// create references to the modal...
+var modal = document.getElementById('myModal');
+// to all images -- note I'm using a class!
+var images = document.getElementsByClassName('myImages');
+// the image in the modal
+var modalImg = document.getElementById("img01");
+// and the caption in the modal
+var captionText = document.getElementById("caption");
+
+// Go through all of the images with our custom class
+for (var i = 0; i < images.length; i++) {
+  var img = images[i];
+  // and attach our click listener for this image.
+  img.onclick = function(evt) {
+    modal.style.display = "block";
+    modalImg.src = this.src;
+    captionText.innerHTML = this.alt;
+  }
+}
+
+var span = document.getElementsByClassName("close")[0];
+
+span.onclick = function() {
+  modal.style.display = "none";
+}
+</script>
+
+</div>
+</html>

@@ -1,0 +1,73 @@
+.p1 {
+font-family: 'Caprasimo', regular;
+}
+
+.p2 {
+font-family: 'Microsoft Sans Serif', regular;
+}
+
+#backbutton {
+position: fixed;
+top: 100px;
+left: 20px;
+z-index: 1000;
+display: flex;
+color: #083060;
+font-size: 45px;
+cursor: pointer;
+}
+
+#bannerdiv {
+height: 400px;
+width: 1500px;
+margin-left: auto;
+margin-right: auto;
+padding-top: 150px;
+background-image: url('images/roundbannerimage.png');
+background-repeat: no-repeat;
+background-size: 100%;
+}
+
+#bannertext {
+text-align: center;
+font-size: 100px;
+color: #083060;
+}
+
+#mainimage {
+height: 800px;
+display: flex;
+justify-content: center;
+}
+
+a {
+color: #4b9acc;
+text-decoration: none;
+}
+
+a:hover {
+color: #083060;
+}
+
+#download {
+text-align: center;
+font-size: 50px;
+font-family: 'Caprasimo', regular;
+cursor: pointer;
+}
+
+#footer {
+height: 250px;
+width: 100%;
+background-color: #083060;
+margin-top: 100px;
+border-top-left-radius: 30px;
+border-top-right-radius: 30px;
+}
+
+#footertext {
+font-size: 25px;
+color: #d8e7ed;
+text-align: center;
+padding-top: 125px;
+}

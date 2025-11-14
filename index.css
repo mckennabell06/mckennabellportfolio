@@ -1,0 +1,95 @@
+.p1 {
+font-family: 'Caprasimo', regular;
+}
+
+.p2 {
+font-family: 'Microsoft Sans Serif', regular;
+}
+
+#backbutton {
+position: fixed;
+top: 100px;
+left: 20px;
+z-index: 1000;
+display: flex;
+color: #083060;
+font-size: 45px;
+cursor: pointer;
+}
+
+#homediv {
+width: 100%;
+color: #4b9acc;
+padding-top: 300px;
+text-align: center;
+display: flex;
+justify-content: center;
+}
+
+.wave-text span {
+    display: inline-block;
+    font-size: 12rem;
+	font-family: 'Caprasimo', regular;
+    animation: wave 2s ease-in-out infinite;
+}
+
+.wave-text span:nth-child(1) {
+    animation-delay: 0s;
+}
+.wave-text span:nth-child(2) {
+    animation-delay: 0.2s;
+}
+.wave-text span:nth-child(3) {
+    animation-delay: 0.4s;
+}
+.wave-text span:nth-child(4) {
+    animation-delay: 0.6s;
+}
+.wave-text span:nth-child(5) {
+    animation-delay: 0.8s;
+}
+.wave-text span:nth-child(6) {
+    animation-delay: 1.0s;
+}
+.wave-text span:nth-child(7) {
+    animation-delay: 1.2s;
+}
+
+@keyframes wave {
+    0%, 100% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-20px);
+    }
+}
+
+#subtext {
+font-size: 40px;
+line-height: 100px;
+}
+
+#gridimg {
+height: 600px;
+justify-content: center;
+margin-top: -560px;
+}
+
+#footer {
+height: 250px;
+width: 100%;
+background-color: #083060;
+margin-top: 100px;
+border-top-left-radius: 30px;
+border-top-right-radius: 30px;
+}
+
+#footertext {
+font-size: 25px;
+color: #d8e7ed;
+text-align: center;
+padding-top: 125px;
+}
+
+
+
